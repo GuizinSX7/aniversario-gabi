@@ -1,19 +1,19 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Amaranth", sans-serif;
 }
 
-#inicio{
+#inicio {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 90vh;
     background-color: #1B3F99;
 }
 
-#caixa{
+#caixa {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -23,35 +23,35 @@
     border-radius: 30px;
 }
 
-#titulo{
+#titulo {
     width: 100%;
     padding-top: 20px;
     display: flex;
     justify-content: space-around;
 }
 
-#titulo-aniver{
+#titulo-aniver {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#feliz-aniver{
-    font-size: 100px;
+#feliz-aniver {
+    font-size: clamp(2rem, 8vw, 6rem);
     color: #1B3F99;
     padding-top: 20px;
     position: relative;
 }
 
-#gabi{
-    font-size: 100px;
+#gabi {
+    font-size: clamp(2rem, 8vw, 6rem);
     color: #FF4E4E;
     position: absolute;
     margin-top: 75px;
     text-shadow: -5px 5px #581111;
 }
 
-#imgs{
+#imgs {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -59,58 +59,61 @@
 }
 
 #gato{
-    width: 331px;
-    height: 490px;
+    width: 50%;
+    max-width: 250px;
+    height: auto;
+    margin-left: 15%;
 }
 
 #bolo{
-    width: 300px;
-    height: 350px;
+    width: 15vw;
+    height: auto;
 }
 
 #charles{
-    width: 395px;
-    height: 475px;
+    width: 50%;
+    max-width: 300px;
+    height: auto;
 }
 
-#charles-div{
+#charles-div {
     display: flex;
 }
 
-#creuza-div{
+#creuza-div {
     display: flex;
 }
 
-#gato-faixa{
-    height: 300px;
-    background-image: url("imgs/Group\ 6.png");
+#gato-faixa {
+    height: 30vh;
+    background-image: url("imgs/Group\ 8.png");
     background-size: 90px;
     background-repeat: repeat;
     background-attachment: fixed;
     position: relative;
 }
 
-#secao2{
-    height: 100vh;
+#secao2 {
+    height: 90vh;
 }
 
-.filtro{
+.filtro {
     height: 100%;
     width: 100%;
-    background-color: #cf361eea;
+    background-color: #cf361e7e;
     position: absolute;
     top: 0;
 }
 
-.balao{
-    width: 179px;
-    height: 348px;
+.balao {
+    width: 10vw;
+    height: auto;
 }
 
-.citacao{
-    width: 275px;
+.citacao {
+    width: 11vw;
     word-wrap: break-word;
     font-family: "ABeeZee", sans-serif;
-    font-size: 15px;
-    margin-top: 120px;
+    font-size: 1rem;
+    margin-top: 10vh;
 }

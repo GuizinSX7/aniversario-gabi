@@ -1,0 +1,5 @@
+<!-- imgs/rasgo.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none">
+  <!-- linha “rasgada” (branco = fica visível) -->
+  <path d="M0,0 H100 V3 L95,7 L90,4 L85,6 L80,2 L75,7 L70,3 L65,6 L60,2 L55,7 L50,4 L45,6 L40,3 L35,8 L30,4 L25,7 L20,2 L15,6 L10,3 L5,7 L0,5 Z" fill="#fff"></path>
+</svg>
