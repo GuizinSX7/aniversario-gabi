@@ -5,15 +5,18 @@
     font-family: "Amaranth", sans-serif;
 }
 
+body{
+    background-color: #1B3F99;
+}
+
 #inicio {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 90vh;
-    background-color: #1B3F99;
 }
 
-#caixa {
+#caixa-secao1 {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -60,7 +63,7 @@
 
 #gato {
     width: 50%;
-    max-width: 250px;
+    max-width: 300px;
     height: auto;
     margin-left: 15%;
 }
@@ -85,16 +88,34 @@
 }
 
 #gato-faixa {
-    height: 30vh;
-    background-image: url("imgs/Group\ 8.png");
+    height: 35vh;
+    background-image: url("imgs/Group 8.png");
     background-size: 90px;
     background-repeat: repeat;
     background-attachment: fixed;
-    position: relative;
+    position: relative; 
 }
 
-#secao2 {
-    height: 90vh;
+#borda-rasgada-topo {
+    width: 100%;
+    height: 50px;
+    background-image: url('./imgs/Rasgado-cima.png');
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+    position: absolute; 
+    top: 0; 
+    z-index: 2;
+}
+
+#bora-rasgada-baixo {
+    width: 100%;
+    height: 50px;
+    background-image: url('./imgs/Rasgado-baixo.png');
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+    position: absolute; 
+    bottom: 0; 
+    z-index: 2;
 }
 
 .filtro {
@@ -103,6 +124,24 @@
     background-color: #cf361e7e;
     position: absolute;
     top: 0;
+    z-index: 1; /* z-index 1, para ficar abaixo das bordas */
+}
+
+#secao2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+#caixa-secao2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #EFEFEF;
+    width: 95%;
+    height: 90%;
+    border-radius: 30px;
 }
 
 .balao {
@@ -119,100 +158,3 @@
     margin-top: 5%;
 }
 
-@media (max-width: 1500px) {
-    #titulo {
-        width: 100%;
-        padding-top: 10px;
-        display: flex;
-        justify-content: space-around;
-    }
-
-    #titulo-aniver {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #feliz-aniver {
-        font-size: clamp(2rem, 8vw, 6rem);
-        color: #1B3F99;
-        padding-top: 10px;
-        position: relative;
-    }
-
-    #gabi {
-        font-size: clamp(2rem, 8vw, 6rem);
-        color: #FF4E4E;
-        position: absolute;
-        margin-top: 65px;
-        text-shadow: -5px 5px #581111;
-    }
-
-    #imgs {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    #gato {
-        width: 50%;
-        max-width: 250px;
-        height: auto;
-        margin-left: 15%;
-    }
-
-    #bolo {
-        width: 15vw;
-        height: auto;
-    }
-
-    #charles {
-        width: 50%;
-        max-width: 300px;
-        height: auto;
-    }
-
-    #charles-div {
-        display: flex;
-    }
-
-    #creuza-div {
-        display: flex;
-    }
-
-    #gato-faixa {
-        height: 30vh;
-        background-image: url("imgs/Group\ 8.png");
-        background-size: 90px;
-        background-repeat: repeat;
-        background-attachment: fixed;
-        position: relative;
-    }
-
-    #secao2 {
-        height: 90vh;
-    }
-
-    .filtro {
-        height: 100%;
-        width: 100%;
-        background-color: #cf361e7e;
-        position: absolute;
-        top: 0;
-    }
-
-    .balao {
-        width: 10vw;
-        height: auto;
-    }
-
-    .citacao {
-        width: 50%;
-        max-width: 250px;
-        word-wrap: break-word;
-        font-family: "ABeeZee", sans-serif;
-        font-size: clamp(0.9rem, 2vw, 1.2rem);
-        margin-top: 5%;
-    }
-}
