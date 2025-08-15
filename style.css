@@ -163,9 +163,9 @@ body {
 .vinyl-jacket {
   position: relative;
   border-radius: 1px;
-  width: 400px;
-  height: 400px;
-  perspective: 350px;
+  width: 450px;
+  height: 450px;
+  perspective: 450px;
   transform-style: preserve-3d;
   background-image: 
     linear-gradient(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0)),
@@ -271,7 +271,7 @@ body {
 }
 
 #lyrics p.active {
-    opacity: 1;
+    opacity: 2.5;
     font-size: 2rem; /* Aumenta o tamanho da linha ativa */
     color: #ff0101;
     font-weight: bold;
